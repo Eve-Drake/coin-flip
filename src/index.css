@@ -1,0 +1,20 @@
+
+
+button{
+  padding: 0.5em;
+  margin-left: 50vw;
+  background: none;
+  border: 2px solid lightgray;
+  border-radius: 15px;
+  transition: background-color 1s;
+}
+
+button:hover{
+ cursor: pointer;
+ background-color: lightcoral;
+}
+
+.bold{
+  font-weight: bold;
+  font-size: larger;
+}

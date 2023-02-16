@@ -12,6 +12,12 @@ button:hover{
  background-color: lightcoral;
 }
 
+img{
+  padding: 5rem;
+  background-color: red;
+  border-radius: 50%;
+}
+
 .bold{
   font-weight: bold;
   font-size: larger;

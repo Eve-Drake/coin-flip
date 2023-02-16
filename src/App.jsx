@@ -32,12 +32,12 @@ function App() {
 
       {(yesNo.answer === 'no' ? 
         <div>
-          <GiDoubleDragon size={500} alt='heads'/>
+          <img src='https://www.svgrepo.com/show/307453/whale-tail-wild-wildlife-big.svg'/>
         </div>
         
         : 
         <div>
-          <GiReptileTail size={500} alt='tails'/>
+          <img src='https://www.svgrepo.com/show/484092/head.svg'/>
         </div>
         )}
       

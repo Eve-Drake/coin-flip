@@ -4,17 +4,21 @@ import {GiDoubleDragon, GiReptileTail} from "react-icons/gi";
 
 function App() {
   const [yesNo, setYesNo] = useState({})
+  const [loading, setLoading] = useState(false)
 
   const getCoinFlip = () => {
+    setLoading(true)
     try{
     fetch('https://yesno.wtf/api')
     .then(res => res.json())
     .then((res) =>{
       setYesNo(res)
+      setLoading(true)
     })
     }
     catch(err){
       console.err(err)
+      setLoading(false)
     }
   }
 
@@ -30,7 +34,7 @@ function App() {
         <p>Flip Again?</p>
       </button>
 
-      {(yesNo.answer === 'no' ? 
+      {(yesNo.answer != 'no' ? 
         <div>
           <img src='https://www.svgrepo.com/show/307453/whale-tail-wild-wildlife-big.svg'/>
         </div>

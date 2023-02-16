@@ -13,7 +13,7 @@ function App() {
     .then(res => res.json())
     .then((res) =>{
       setYesNo(res)
-      setLoading(true)
+      setLoading(false)
     })
     }
     catch(err){
@@ -33,7 +33,7 @@ function App() {
         <p className='bold'>{yesNo.answer ==='no'? 'Heads' : 'Tails'}</p>
         <p>Flip Again?</p>
       </button>
-
+      {loading ? <h1>Loading...</h1> : <h1></h1>}
       {(yesNo.answer != 'no' ? 
         <div>
           <img src='https://www.svgrepo.com/show/307453/whale-tail-wild-wildlife-big.svg'/>

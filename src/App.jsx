@@ -1,6 +1,4 @@
 import { useEffect, useState } from 'react'
-import {GiDoubleDragon, GiReptileTail} from "react-icons/gi";
-
 
 function App() {
   const [yesNo, setYesNo] = useState({})

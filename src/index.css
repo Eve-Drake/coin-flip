@@ -12,14 +12,14 @@ button{
   margin-left: auto;
   margin-right: auto;
   background: none;
-  border: 2px solid lightgray;
+  border: 5px black solid;
   border-radius: 15px;
   transition: background-color 1s;
 }
 
 button:hover{
  cursor: pointer;
- background-color: lightcoral;
+ background-color: rgb(199, 198, 198);
 }
 
 img{

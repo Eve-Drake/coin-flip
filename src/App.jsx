@@ -31,12 +31,12 @@ function App() {
             {(yesNo.answer != 'no' ? 
         <div>
           <img src='https://www.svgrepo.com/show/307453/whale-tail-wild-wildlife-big.svg'/>
-          <p>Tails</p>
+          <h2>Tails</h2>
         </div>
         : 
         <div>
           <img src='https://www.svgrepo.com/show/484092/head.svg'/>
-          <p>Heads</p>
+          <h2>Heads</h2>
         </div>
         )}  
       </button>

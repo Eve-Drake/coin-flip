@@ -42,9 +42,6 @@ function App() {
           <img src='https://www.svgrepo.com/show/484092/head.svg'/>
         </div>
         )}
-      
-
-
     </>
   )
 }

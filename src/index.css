@@ -13,8 +13,13 @@ button{
   margin-right: auto;
   background: none;
   border: 5px black solid;
-  border-radius: 15px;
+  border-radius: 50%;
   transition: background-color 1s;
+}
+
+img{
+  width: 15vw;
+  padding: 5vw;
 }
 
 button:hover{

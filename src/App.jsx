@@ -30,14 +30,13 @@ function App() {
       <button onClick={()=>getCoinFlip()}>
             {(yesNo.answer != 'no' ? 
         <div>
-          <p>Tails</p>
           <img src='https://www.svgrepo.com/show/307453/whale-tail-wild-wildlife-big.svg'/>
-  
+          <p>Tails</p>
         </div>
         : 
         <div>
-          <p>Heads</p>
           <img src='https://www.svgrepo.com/show/484092/head.svg'/>
+          <p>Heads</p>
         </div>
         )}  
       </button>

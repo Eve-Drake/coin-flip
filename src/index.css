@@ -22,17 +22,6 @@ button:hover{
  background-color: rgb(199, 198, 198);
 }
 
-img{
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
-  width: 15%;
-  padding: 5rem;
-  background-color: grey;
-  border: 15px black solid;
-  border-radius: 50%;
-}
-
 .bold{
   font-weight: bold;
   font-size: larger;

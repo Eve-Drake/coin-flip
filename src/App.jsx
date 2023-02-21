@@ -26,22 +26,21 @@ function App() {
 
   return (
     <>      
-    
-    <button onClick={()=>getCoinFlip()}>
-        <p className='bold'>{yesNo.answer ==='no'? 'Heads' : 'Tails'}</p>
-        <p>Flip Again?</p>
-      </button>
-      {loading ? <h1>Loading...</h1> : <h1></h1>}
-      {(yesNo.answer != 'no' ? 
+      {loading ? <h1>Loading...</h1> : <h1>Click the Coin To Flip Again</h1>}
+      <button onClick={()=>getCoinFlip()}>
+            {(yesNo.answer != 'no' ? 
         <div>
+          <p>Tails</p>
           <img src='https://www.svgrepo.com/show/307453/whale-tail-wild-wildlife-big.svg'/>
+  
         </div>
-        
         : 
         <div>
+          <p>Heads</p>
           <img src='https://www.svgrepo.com/show/484092/head.svg'/>
         </div>
-        )}
+        )}  
+      </button>
     </>
   )
 }

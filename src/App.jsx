@@ -1,4 +1,5 @@
 import { useEffect, useState } from 'react'
+import Coin from './Coin'
 
 function App() {
   const [yesNo, setYesNo] = useState({})
@@ -23,23 +24,11 @@ function App() {
   useEffect(()=>{
     getCoinFlip();
   },[])
-
   return (
-    <>      
+    
+    <> 
       {loading ? <h1>Loading...</h1> : <h1>Click the Coin To Flip Again</h1>}
-      <button onClick={()=>getCoinFlip()}>
-            {(yesNo.answer != 'no' ? 
-        <div>
-          <img src='https://www.svgrepo.com/show/307453/whale-tail-wild-wildlife-big.svg'/>
-          <h2>Tails</h2>
-        </div>
-        : 
-        <div>
-          <img src='https://www.svgrepo.com/show/484092/head.svg'/>
-          <h2>Heads</h2>
-        </div>
-        )}  
-      </button>
+      <Coin getCoinFlip={getCoinFlip} yesNo={yesNo}/>
     </>
   )
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Coin = ({yesNo, getCoinFlip}) => {
+const Coin = ({yesNo, getCoinFlip, headsOrTails}) => {
   return (
     <>
     <button onClick={()=>getCoinFlip()}>
